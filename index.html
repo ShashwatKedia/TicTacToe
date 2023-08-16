@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="main" class="main_container">
+
+        <section class="section profile_sec" id="section1">
+            <div class="photo" id="p1_photo_div"></div>
+            <input type="file" accept="image/*" name="photo" id="Player1_pic_inp" onchange="readUrlP1(this)">
+            <h1>Player 1 (X)</h1>
+            <h2 id="p1_gameswon_h">Games Won: 0</h2>
+            <h2 id="p1_gameslost_h">Games Lost: 0</h2>
+            <h2 id="p1_gamesplayed_h">Games Played: 0</h2>
+        </section>
+        <section class="section" id="section2">
+            <h2 class="turn_h2" id="player1_h">Player 1 (X)</h2>
+            <h2 class="turn_h2" id="player2_h">Player 2 (O)</h2>
+            <div class="game_grid">
+                <div class="btn_img hover" id="btn1" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn2" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn3" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn4" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn5" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn6" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn7" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn8" onclick="setGridImage(id.charAt(3))"></div>
+                <div class="btn_img hover" id="btn9" onclick="setGridImage(id.charAt(3))"></div>
+            </div>
+
+            <div class="winner display_none" id="winnerText"></div>
+
+            <button id="start_game_btn" class="start_btn">Start Game</button>
+        </section>
+        <section class="section profile_sec" id="section3">
+            <div class="photo" id="p2_photo_div"></div>
+            <input type="file" accept="image/*" name="photo"id="Player2_pic_inp"onchange="readUrlP2(this)">
+
+            <h1>Player 2 (O)</h1>
+            <h2 id="p2_gameswon_h">Games Won: 0</h2>
+            <h2 id="p2_gameslost_h">Games Lost: 0</h2>
+            <h2 id="p2_gamesplayed_h">Games Played: 0</h2>
+        </section>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
