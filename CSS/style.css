@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* font-weight: lighter; */
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+/* Main Container */
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* All Sections */
+.section {
+    border-right: 2px solid rgb(130, 44, 230);
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* section 1 and 2 */
+.profile_sec{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#section3{
+    border: none;
+}
+
+
+/* Turn Heading2 of section 2 */
+.turn_h2{
+    font-size: 40px;
+    display: inline;
+    font-weight: 700;
+    /* font-family: 'Nunito', sans-serif; */
+    /* width: 1fr; */
+    margin: 0px 30px;
+}
+
+/* Grid of Section 2 */
+.game_grid{
+    background-color: rgb(215, 77, 250);
+    width: 40vw;
+    height: 70vh;
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.winner{
+    display: block;
+    position: absolute;
+    top: 43vh;
+    left: 30vw;
+    font-size: 5rem;
+    border: 2px solid red;
+}
+
+.display_none{
+    display: none;
+}
+
+.btn_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover:hover{
+    background-color: rgb(229, 194, 245);
+}
+
+.start_btn{
+    background-color: black;
+    color: rgb(130, 44, 230);
+    font-weight: bolder;
+    font-size: 20px;
+    width: 200px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Image div of Player */
+.photo{
+    width:  150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: rgb(130, 44, 230);
+    margin: 20px;
+}
+
+
